@@ -1,0 +1,83 @@
+html,
+body,
+h1,
+h2,
+h3,
+ul,
+ol,
+p,
+div,
+section,
+button,
+input,
+textarea,
+fieldset,
+legend {
+  margin: 0;
+  padding: 0;
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+h1,
+h2,
+h3,
+strong,
+b {
+  font-weight: 700;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+strong,
+b,
+p,
+span,
+i {
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Chrome/Safari/Opera */
+  -khtml-user-select: none; /* Konqueror */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge*/
+  user-select: none;
+}
+
+ul,
+ol {
+  list-style-type: none;
+}
+
+img {
+  vertical-align: middle;
+}
+
+input,
+textarea,
+button {
+  border: none;
+  outline: none;
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  border-radius: 0;
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  -webkit-tap-highlight-color: transparent;
+}
+
+button {
+  color: inherit;
+  background-color: transparent;
+  font-family: inherit;
+  font-size: inherit;
+  text-transform: none;
+  cursor: pointer;
+}
+
+fieldset {
+  border: none;
+  text-align: inherit;
+}
