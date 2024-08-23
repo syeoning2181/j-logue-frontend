@@ -1,6 +1,5 @@
-import styled from 'styled-components';
-
 import { useRouter } from 'next/router';
+import styled from 'styled-components';
 
 import { Layout, TabBar, Text } from '@/shared/components';
 import { Variant } from '@/shared/constants';

@@ -1,11 +1,12 @@
-import React from "react";
-import styled from "styled-components";
+import React from 'react';
 
-import LabelIcon, { LabelIconType } from "@/shared/components/LabelIcons";
-import { Text } from "@/shared/components";
-import { Size, Variant } from "@/shared/constants";
+import styled from 'styled-components';
 
-export const APP_BAR_HEIGHT = "62px";
+import { Text } from '@/shared/components';
+import LabelIcon, { LabelIconType } from '@/shared/components/LabelIcons';
+import { Size, Variant } from '@/shared/constants';
+
+export const APP_BAR_HEIGHT = '62px';
 
 interface AppBarProps {
   title?: string;

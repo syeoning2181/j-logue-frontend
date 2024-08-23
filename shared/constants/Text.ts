@@ -1,21 +1,21 @@
-import { css } from "styled-components";
+import { css } from 'styled-components';
 
 export enum Variant {
-  Head_25 = "Head_25",
-  Head_22 = "Head_22",
-  Head_20 = "Head_20",
-  Head_18 = "Head_18",
-  Head_16 = "Head_16",
-  Title_16 = "Title_16",
-  Title_15 = "Title_15",
-  Title_14 = "Title_14",
-  Title_13 = "Title_13",
-  Body_16 = "Body_16",
-  Body_15 = "Body_15",
-  Body_14 = "Body_14",
-  Body_13 = "Body_13",
-  Body_12 = "Body_12",
-  Sub_11 = "Sub_11",
+  Head_25 = 'Head_25',
+  Head_22 = 'Head_22',
+  Head_20 = 'Head_20',
+  Head_18 = 'Head_18',
+  Head_16 = 'Head_16',
+  Title_16 = 'Title_16',
+  Title_15 = 'Title_15',
+  Title_14 = 'Title_14',
+  Title_13 = 'Title_13',
+  Body_16 = 'Body_16',
+  Body_15 = 'Body_15',
+  Body_14 = 'Body_14',
+  Body_13 = 'Body_13',
+  Body_12 = 'Body_12',
+  Sub_11 = 'Sub_11',
 }
 
 export { Variant as TextVariant };

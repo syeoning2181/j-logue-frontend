@@ -1,39 +1,38 @@
-import styled from "styled-components";
+import { useRouter } from 'next/router';
+import styled from 'styled-components';
 
-import { useRouter } from "next/router";
-
-import { Size, Variant } from "@/shared/constants";
+import { Size } from '@/shared/constants';
 
 const TabList = [
   {
     id: 1,
-    title: "캘린더",
-    url: "/calender",
-    icon: "calender",
+    title: '캘린더',
+    url: '/calender',
+    icon: 'calender',
   },
   {
     id: 2,
-    title: "할일",
-    url: "/todo",
-    icon: "todo",
+    title: '할일',
+    url: '/todo',
+    icon: 'todo',
   },
   {
     id: 3,
-    title: "캘린더 추가",
-    url: "/calender/add",
-    icon: "calender_add",
+    title: '캘린더 추가',
+    url: '/calender/add',
+    icon: 'calender_add',
   },
   {
     id: 4,
-    title: "알림",
-    url: "/alert",
-    icon: "alert",
+    title: '알림',
+    url: '/alert',
+    icon: 'alert',
   },
   {
     id: 5,
-    title: "마이페이지",
-    url: "/myPage",
-    icon: "myPage",
+    title: '마이페이지',
+    url: '/myPage',
+    icon: 'myPage',
   },
 ];
 
@@ -61,11 +60,7 @@ const TabBar = () => {
               className="tabButton"
               onClick={() => handleClickNavButton(tab.url)}
             >
-              <img
-                src={`/images/tabBar/${tab.icon}.png`}
-                width={16}
-                alt={tab.title}
-              />
+              <img src={`/images/tabBar/${tab.icon}.png`} width={16} alt={tab.title} />
             </button>
           ))}
         </div>

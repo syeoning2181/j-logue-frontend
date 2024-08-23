@@ -1,18 +1,19 @@
-import React, { memo } from "react";
-import styled from "styled-components";
+import React, { memo } from 'react';
+
+import styled from 'styled-components';
 
 export interface DividerProps {
   color?: string;
   borderWidth?: number;
-  borderStyle?: "solid" | "dotted" | "dashed";
+  borderStyle?: 'solid' | 'dotted' | 'dashed';
   margin?: string;
 }
 
 const Divider = ({
-  color = "#ddd",
+  color = '#ddd',
   borderWidth = 1,
-  borderStyle = "solid",
-  margin = "0 0 0 0",
+  borderStyle = 'solid',
+  margin = '0 0 0 0',
   ...props
 }: DividerProps) => {
   return (
@@ -30,7 +31,7 @@ export default memo(Divider);
 
 const Wrapper = styled.div<DividerProps>`
   height: 0;
-  border-top: ${({ borderWidth }) => `${borderWidth}px`}
-    ${({ borderStyle }) => borderStyle} ${({ color }) => color};
+  border-top: ${({ borderWidth }) => `${borderWidth}px`} ${({ borderStyle }) => borderStyle}
+    ${({ color }) => color};
   margin: ${({ margin }) => margin};
 `;

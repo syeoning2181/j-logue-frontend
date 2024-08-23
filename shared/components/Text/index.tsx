@@ -1,17 +1,13 @@
-import React, {
-  ComponentPropsWithoutRef,
-  ForwardedRef,
-  forwardRef,
-  memo,
-} from "react";
-import styled, { css } from "styled-components";
+import React, { ComponentPropsWithoutRef, ForwardedRef, forwardRef, memo } from 'react';
 
-import { Variant, FontSize, FontWeight } from "@/shared/constants";
+import styled, { css } from 'styled-components';
+
+import { Variant, FontSize, FontWeight } from '@/shared/constants';
 
 type FontSizeType = keyof typeof FontSize;
 type FontWeightType = keyof typeof FontWeight;
 
-export interface TextProps extends ComponentPropsWithoutRef<"p"> {
+export interface TextProps extends ComponentPropsWithoutRef<'p'> {
   variant?: Variant; // 텍스트 프리셋
   color?: string; // 텍스트 색상
   size?: FontSizeType; // 텍스트 크기
@@ -27,12 +23,12 @@ export const Text = forwardRef(
       inline = false,
       isEllipsis = false,
       alignCenter = false,
-      color = "#000",
+      color = '#000',
       ...props
     }: TextProps,
-    ref: ForwardedRef<HTMLElement>
+    ref: ForwardedRef<HTMLElement>,
   ) => {
-    const tagName = inline ? "span" : "p";
+    const tagName = inline ? 'span' : 'p';
 
     return (
       <Wrapper
@@ -45,8 +41,9 @@ export const Text = forwardRef(
         ref={ref}
       />
     );
-  }
+  },
 );
+Text.displayName = 'Text';
 
 export default memo(Text);
 
@@ -137,7 +134,7 @@ const Wrapper = styled.p<{
   margin: 0;
   padding: 0;
   width: 100%;
-  font-family: "Noto Sans KR", sans-serif !important;
+  font-family: 'Noto Sans KR', sans-serif !important;
   color: ${({ color }) => color};
   letter-spacing: -0.2px;
   white-space: pre-line;

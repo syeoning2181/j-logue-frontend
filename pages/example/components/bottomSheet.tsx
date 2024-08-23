@@ -1,6 +1,6 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
-import { Layout, TabBar } from "@/shared/components";
+import { Layout, TabBar } from '@/shared/components';
 
 const BottomSheetExample = () => {
   return (

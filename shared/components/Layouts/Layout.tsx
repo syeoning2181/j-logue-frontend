@@ -1,8 +1,8 @@
-import styled from "styled-components";
-import { useRouter } from "next/router";
+import { useRouter } from 'next/router';
+import styled from 'styled-components';
 
-import { AppBar } from "@/shared/components/Layouts";
-import { Size } from "@/shared/constants";
+import { AppBar } from '@/shared/components';
+import { Size } from '@/shared/constants';
 
 export interface LayoutProps {
   children: React.ReactNode;
@@ -12,13 +12,7 @@ export interface LayoutProps {
   onClickBack?: () => void;
 }
 
-const Layout = ({
-  children,
-  className,
-  title,
-  hideHeader = false,
-  onClickBack,
-}: LayoutProps) => {
+const Layout = ({ children, className, title, hideHeader = false, onClickBack }: LayoutProps) => {
   const router = useRouter();
 
   const goBack = () => {
@@ -47,7 +41,7 @@ const Main = styled.main<{ $hideHeader: boolean }>`
   box-sizing: border-box;
   max-width: ${Size.FULL_WIDTH}px;
   min-height: ${({ $hideHeader }) =>
-    $hideHeader ? "100vh" : `calc(100vh - ${Size.APP_BAR_HEIGHT}px)`};
+    $hideHeader ? '100vh' : `calc(100vh - ${Size.APP_BAR_HEIGHT}px)`};
   margin: 0 auto;
 
   * {

@@ -1,12 +1,5 @@
-import { ServerStyleSheet } from "styled-components";
-
-import Document, {
-  Html,
-  Head,
-  Main,
-  NextScript,
-  DocumentContext,
-} from "next/document";
+import Document, { Html, Head, Main, NextScript, DocumentContext } from 'next/document';
+import { ServerStyleSheet } from 'styled-components';
 
 const CustomDocument = () => (
   <Html>

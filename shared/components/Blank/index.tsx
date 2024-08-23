@@ -1,2 +1,2 @@
-export { default as Spacing } from "./Spacing";
-export { default as Divider } from "./Divider";
+export { default as Spacing } from './Spacing';
+export { default as Divider } from './Divider';
