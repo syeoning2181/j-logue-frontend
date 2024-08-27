@@ -18,8 +18,6 @@ export enum Variant {
   Sub_11 = 'Sub_11',
 }
 
-export { Variant as TextVariant };
-
 export const FontWeight = {
   400: css`
     font-weight: 400;

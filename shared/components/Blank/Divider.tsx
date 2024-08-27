@@ -19,9 +19,9 @@ const Divider = ({
   return (
     <Wrapper
       color={color}
-      borderWidth={borderWidth}
-      borderStyle={borderStyle}
-      margin={margin}
+      $borderWidth={borderWidth}
+      $borderStyle={borderStyle}
+      $margin={margin}
       {...props}
     />
   );
@@ -29,9 +29,10 @@ const Divider = ({
 
 export default memo(Divider);
 
-const Wrapper = styled.div<DividerProps>`
+const Wrapper = styled.div<{ $borderWidth: number; $borderStyle: string; $margin: string }>`
   height: 0;
-  border-top: ${({ borderWidth }) => `${borderWidth}px`} ${({ borderStyle }) => borderStyle}
-    ${({ color }) => color};
-  margin: ${({ margin }) => margin};
+  border-top: ${({ $borderWidth }) => `
+    ${$borderWidth}px`}
+    ${({ $borderStyle }) => $borderStyle} ${({ color }) => color};
+  margin: ${({ $margin }) => $margin};
 `;
